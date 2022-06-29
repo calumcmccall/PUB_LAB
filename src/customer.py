@@ -10,6 +10,9 @@ class Customer:
             self.wallet -= drink.price
             pub.change_till(drink.price)
             self.increase_drunkness(drink)
+            pub.change_stock_count(drink)
+        else:
+            return False
 
     def increase_drunkness(self, drink):
         self.drunkness += drink.alcohol_level
