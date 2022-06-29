@@ -1,0 +1,4 @@
+# Don't need to include a directory route in gitignore
+
+__pycache__
+
